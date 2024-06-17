@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml" th:fragment="layout (conteudo)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeneratedDiagrams</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<header>
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="https://site.ufn.edu.br/">
+                    UFN
+                </a>
+
+                <a class="navbar-item" href="/home">
+                    Home
+                </a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Mais
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/formulario">
+                            Formulário
+                        </a>
+                        <a class="navbar-item" href="/ExemploDiagrama">
+                            Diagrama
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <div class="buttons">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+    <section class="hero is-fullheight is-white">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <main th:include="${conteudo}">
+                    <h1>Corpo</h1>
+                </main>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p>
+            <strong>Universidade Franciscana</strong> by <a href="https://site.ufn.edu.br/">UFN</a>.
+            Um trabalho desenvolvido pelo curso
+            <a href="https://site.ufn.edu.br/pagina/ciencia-da-computacao">Ciência da Computação</a>.
+        </p>
+    </div>
+</footer>
+
+</html>
