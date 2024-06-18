@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.w3.org/1999/xhtml" th:replace="~{template :: layout (~{:: main})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+</head>
+<body>
+<main>
+    <section class="section is-flex is-justify-content-center is-align-items-start" style="padding-top: 20px; height: 100vh;">
+        <div class="container has-text-centered" style="max-width: 600px;">
+            <h1 class="title">Formulário do Gerador de Diagramas de Atividades</h1>
+            <p class="subtitle">Insira abaixo as informações para gerar o diagrama de atividades.</p>
+            <hr class="is-rounded is-size-3" style="height: 10px; background-color: #04d4b4; margin: 1.5rem auto; max-width: 400px;">
+            <div class="field" style="margin-bottom: 1rem;">
+                <div class="control">
+                    <textarea class="textarea" style="height: 500px;"></textarea>
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button is-primary is-medium is-fullwidth">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
