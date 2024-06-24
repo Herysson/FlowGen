@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @Entity
 @Table (name = "tbl_text_image")
-public class Text_Image {
+public class Diagram {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
