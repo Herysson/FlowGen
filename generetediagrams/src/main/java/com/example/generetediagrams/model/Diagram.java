@@ -10,9 +10,9 @@ public class Diagram {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Lob
+    @Column(name = "text", length = 65535)
     private String text;
-    @Lob
+    @Column(name = "code", length = 65535)
     private String code;
     @Lob
     @Column(name = "image_data", nullable = false, columnDefinition = "BLOB")

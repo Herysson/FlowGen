@@ -8,10 +8,12 @@
 </head>
 <body>
 <main>
-    <h1 class="title is-1">Exemplo de Diagrama de Atividade:</h1>
-    <figure class="image is-1002x844">
-        <img th:src="@{/img/ActivityDiagram.png}" />
-    </figure>
+    <h1 class="title is-1">Diagrama Gerado:</h1>
+    <div class="column is-half">
+        <figure class="image is-4by3">
+            <img th:src="${image}" class="custom-image" />
+        </figure>
+    </div>
 </main>
 </body>
 </html>
