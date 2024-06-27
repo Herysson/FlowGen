@@ -9,32 +9,94 @@
 <body>
 <main class="section">
     <div class="container">
-        <h1 class="title is-1">Bem-vindo ao Gerador de Diagramas de Atividades</h1>
+        <h1 class="title is-1 has-text-black">Bem-vindo ao Gerador de Diagramas de Atividades</h1>
+
         <div class="columns">
-            <div class="column is-two-thirds has-background-grey-dark">
+            <div class="column">
                 <div class="box">
-                    <h2 class="title is-4 has-text-white">O que é o Gerador de Diagramas de Atividades?</h2>
-                    <p>O gerador de diagrama de atividades é um projeto que visa gerar um diagrama de atividades com
-                        base nas informações dadas ao usuário.</p>
+                    <h2 class="title is-4 has-text-black has-text-centered">Como funciona o Gerador de Diagrama de
+                        Atividades?</h2>
+                    <p class="has-text-left">O Gerador de Diagrama de Atividades é uma solução inovadora que permite aos
+                        usuários criar diagramas de atividade a partir de descrições textuais de fluxos de trabalho ou
+                        operações (cenários). Utilizando técnicas avançadas de inteligência artificial, a aplicação
+                        interpreta a descrição fornecida pelo usuário e gera automaticamente um diagrama de atividade
+                        conforme os padrões estabelecidos pela UML - <i>Unified Modeling Language</i>.</p>
+                    <br>
+                    <p class="has-text-left"><strong>Recursos Principais:</strong></p>
+                    <p class="has-text-left">- Entrada Textual: Aceita descrições textuais detalhadas de cenários de fluxo
+                        de trabalho.</p>
+                    <p class="has-text-left">- Inteligência Artificial: Utiliza IA para analisar e interpretar a entrada
+                        do usuário.</p>
+                    <p class="has-text-left">- Geração Automática: Produz diagramas de atividade que melhor representam o
+                        cenário descrito.</p>
+                    <p class="has-text-left">- Conformidade com a UML: Garante que os diagramas gerados sigam os padrões e
+                        convenções da UML.</p>
+                    <br>
+                    <p class="has-text-left"><strong>Benefícios:</strong></p>
+                    <p class="has-text-left">- Eficiência: Reduz o tempo e esforço necessários para criar diagramas de atividade complexos.</p>
+                    <p class="has-text-left">- Precisão: Produz resultados consistentes e precisos com base nas entradas fornecidas.</p>
+                    <p class="has-text-left">- Facilidade de Uso: Interface intuitiva que simplifica o processo de geração de diagramas.</p>
                 </div>
             </div>
-            <div class="column has-background-primary">
+        </div>
+
+        <div class="columns">
+            <div class="column">
                 <div class="box">
-                    <h2 class="title is-4 has-text-white">Vamos Começar?</h2>
-                    <p>Insira as informações na página de formulário para gerar o diagrama ou olhe um exemplo na página
+                    <h2 class="title is-4 has-text-black has-text-centered">Vamos Começar?</h2>
+                    <p class="has-text-left">Insira as informações na página de formulário para gerar o diagrama ou olhe
+                        um exemplo na página
                         de Exemplo de Diagrama de Atividades.</p>
                 </div>
             </div>
         </div>
 
-        <div class="box">
-            <h2 class="title is-4 has-text-white">Como funciona o Gerador de Diagrama de Atividades?</h2>
-            <p>O Gerador de Diagrama de Atividades primeiramente recebe as informações do usuário pelo site descritas
-                por ele, depois as informações são recebidas em um banco de dados, que envia para uma inteligência
-                artificial que envia de volta para o banco de dados o código para gerar o Diagrama. O banco de dados
-                depois envia o código para o programa Plant UML que gera o diagrama.</p>
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h2 class="title is-4 has-text-black has-text-centered">Aqui está um exemplo de um cenário:</h2>
+                    <p class="has-text-left"><strong>Cenário:</strong> Processo de Acionamento de Seguro e Reparação de
+                        Veículo</p>
+                    <br>
+                    <p class="has-text-left"><strong>Descrição do Processo:</strong></p>
+                    <p class="has-text-left">- O segurado aciona o seguro.</p>
+                    <p class="has-text-left">- A seguradora recolhe o veículo.</p>
+                    <p class="has-text-left">- A oficina avalia os danos do veículo.</p>
+                    <p class="has-text-left">- Se for constatada perda total, a seguradora deposita o valor segurado e o
+                        processo é finalizado.</p>
+                    <p class="has-text-left">- Caso contrário, a seguradora cobra a franquia.</p>
+                    <p class="has-text-left">- O segurado paga a franquia.</p>
+                    <p class="has-text-left">- A oficina conserta o veículo.</p>
+                    <p class="has-text-left">- O processo é finalizado após o conserto do veículo.</p>
+
+                    <br>
+                    <p class="has-text-left"><strong>Atores e Ações:</strong> Segurado: Acionar Seguro, Pagar Franquia.
+                        Seguradora: Recolher Veículo, Depositar Valor Segurado, Cobrar Franquia. Oficina: Avaliar Danos,
+                        Consertar Veículo.</p>
+                    <p class="has-text-left"><strong>Atividades Paralelas:</strong> As atividades de "Cobrar Franquia",
+                        "Pagar Franquia" e "Consertar Veículo" são realizadas em paralelo.</p>
+                </div>
+            </div>
         </div>
+
+        <div class="columns">
+            <div class="column">
+                <div class="box">
+                    <h2 class="title is-4 has-text-black has-text-centered">Aqui está o diagrama com base nas
+                        informações descritas no exemplo:</h2>
+                    <figure class="image is-200x200">
+                        <img th:src="@{/img/DiagramaPlant.png}"/>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div class="has-text-centered" style="margin-top: 20px;">
+        <a href="/formulario" class="button is-primary">Crie o seu Diagrama</a>
+    </div>
+
 </main>
 </body>
 </html>
