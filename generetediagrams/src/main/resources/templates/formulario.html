@@ -10,13 +10,13 @@
 <main>
     <section class="section is-flex is-justify-content-center is-align-items-start" style="padding-top: 20px; height: 100vh;">
         <div class="container has-text-centered" style="max-width: 600px;">
-            <form  action="#" th:action="@{/text/save}"  th:object="${pessoa}" method="post" class="box">
+            <form  action="#" th:action="@{/save}"  th:object="${textImage}" method="post" class="box">
                 <h1 class="title">Formulário do Gerador de Diagramas de Atividades</h1>
                 <p class="subtitle">Insira abaixo as informações para gerar o diagrama de atividades.</p>
                 <hr class="is-rounded is-size-3" style="height: 10px; background-color: #04d4b4; margin: 1.5rem auto; max-width: 400px;">
                 <div class="field" style="margin-bottom: 1rem;">
                     <div class="control">
-                        <textarea class="textarea" style="height: 500px;"></textarea>
+                        <textarea class="textarea" style="height: 500px;" th:field="*{text}"></textarea>
                     </div>
                 </div>
                 <div class="field">
@@ -25,6 +25,7 @@
                     </div>
                 </div>
             </form>
+
         </div>
 
     </section>
