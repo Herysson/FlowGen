@@ -8,12 +8,14 @@
 </head>
 <body>
 <main>
-    <h1 class="title is-1">Diagrama Gerado:</h1>
-    <div class="column is-half">
-        <figure class="image is-4by3">
-            <img th:src="${image}" class="custom-image" />
-        </figure>
-    </div>
+    <h1 class="title is-1">
+        Diagrama Gerado:
+        <div class="column is-half" style="margin-right: auto; margin-left: auto; width: 50%">
+            <figure class="image is-4by3">
+                <img alt="Imagem será gerada aqui" th:src="${image}" class="custom-image" />
+            </figure>
+        </div>
+    </h1>
 </main>
 </body>
 </html>

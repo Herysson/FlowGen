@@ -45,8 +45,6 @@ public class TextImageController {
 
         model.addAttribute("image", "data:image/png;base64," + base64Image);
 
-        // textImageRepository.save(textImage);
-        //System.out.println(textImage.toString());
         return "ExemploDiagrama";
     }
 
