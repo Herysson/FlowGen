@@ -10,7 +10,7 @@ import java.io.IOException;
 public class GeminiAI {
     private String projectId = "steel-watch-426711-q1";
     private String location = "southamerica-east1";
-    private String modelName = "gemini-1.5-flash-001";
+    private String modelName = "gemini-1.5-pro-001";
 
     public String inputPrompt(String textPrompt) throws IOException {
         try (VertexAI vertexAI = new VertexAI(this.projectId, this.location)) {
